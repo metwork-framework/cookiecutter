@@ -84,6 +84,9 @@ def cookiecutter(
         # include template dir or url in the context dict
         context['cookiecutter']['_template'] = template
 
+        if extra_context:
+            context['cookiecutter'].update(extra_context)
+
         dump(config_dict['replay_dir'], template_name, context)
 
     # Create project from local context and project template.
