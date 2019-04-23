@@ -245,7 +245,7 @@ def _run_hook_from_repo_dir(repo_dir, hook_name, project_dir, context,
 
 
 def generate_files(repo_dir, context=None, output_dir='.',
-                   overwrite_if_exists=False):
+                   overwrite_if_exists=False, search_paths=None):
     """Render the templates and saves them to files.
 
     :param repo_dir: Project template input directory.
@@ -260,6 +260,11 @@ def generate_files(repo_dir, context=None, output_dir='.',
 
     unrendered_dir = os.path.split(template_dir)[1]
     ensure_dir_is_templated(unrendered_dir)
+    if search_paths is not None:
+        loader = FileSystemLoader(['.'] + search_paths,
+                                  followlinks=True)
+    else:
+        loader = FileSystemLoader(['.'], followlinks=True)
     env = StrictEnvironment(
         context=context,
         keep_trailing_newline=True,
@@ -299,7 +304,7 @@ def generate_files(repo_dir, context=None, output_dir='.',
     )
 
     with work_in(template_dir):
-        env.loader = FileSystemLoader('.')
+        env.loader = loader
 
         for root, dirs, files in os.walk('.'):
             # We must separate the two types of dirs into different lists.
