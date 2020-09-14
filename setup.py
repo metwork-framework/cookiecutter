@@ -41,6 +41,7 @@ if sys.argv[-1] == 'readme':
 setup(
     name='cookiecutter',
     version=version,
+    url="https://github.com/metwork-framework/cookiecutter",
     description=('A command-line utility that creates projects from project '
                  'templates, e.g. creating a Python package project from a '
                  'Python package project template.'),
