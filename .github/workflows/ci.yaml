@@ -25,7 +25,7 @@ jobs:
         pip install -r test_requirements.txt
     - name: install
       run: |
-        python setup.py
+        python setup.py develop
     - name: Lint with flake8
       run: |
         flake8 .
