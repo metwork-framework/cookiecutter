@@ -1,10 +1,10 @@
-name: CI2
+name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ metwork ]
   pull_request:
-    branches: [ master ]
+    branches: [ metwork ]
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
     - name: Install dev dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r test-requirements.txt
+        pip install -r test_requirements.txt
     - name: install
       run: |
         python setup.py develop
