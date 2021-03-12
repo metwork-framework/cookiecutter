@@ -2,32 +2,7 @@
 Cookiecutter
 =============
 
-.. image:: https://img.shields.io/pypi/v/cookiecutter.svg
-        :target: https://pypi.python.org/pypi/cookiecutter
-
-.. image:: https://travis-ci.org/audreyr/cookiecutter.svg?branch=master
-        :target: https://travis-ci.org/audreyr/cookiecutter
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter?branch=master
-        :target: https://ci.appveyor.com/project/audreyr/cookiecutter/branch/master
-
-.. image:: https://codecov.io/github/audreyr/cookiecutter/coverage.svg?branch=master
-        :target: https://codecov.io/github/audreyr/cookiecutter?branch=master
-
-.. image:: https://badges.gitter.im/Join Chat.svg
-        :target: https://gitter.im/audreyr/cookiecutter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-
-.. image:: https://readthedocs.org/projects/cookiecutter/badge/?version=latest
-        :target: https://readthedocs.org/projects/cookiecutter/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://landscape.io/github/audreyr/cookiecutter/master/landscape.svg?style=flat
-        :target: https://landscape.io/github/audreyr/cookiecutter/master
-        :alt: Code Health
-
-.. image:: https://img.shields.io/scrutinizer/g/audreyr/cookiecutter.svg
-        :target: https://scrutinizer-ci.com/g/audreyr/cookiecutter/?branch=master
-        :alt: Scrutinizer Code Quality
+[![GitHub CI](https://github.com/metwork-framework/cookiecutter/workflows/CI/badge.svg?branch=metwork)](https://github.com/metwork-framework/cookiecutter/actions?query=workflow%3ACI+branch%3Ametwork)
 
 A command-line utility that creates projects from **cookiecutters** (project
 templates), e.g. creating a Python package project from a Python package project template.
@@ -37,7 +12,6 @@ templates), e.g. creating a Python package project from a Python package project
 * PyPI: https://pypi.python.org/pypi/cookiecutter
 * Free and open source software: `BSD license`_
 
-.. image:: https://raw.github.com/audreyr/cookiecutter/3ac078356adf5a1a72042dfe72ebfa4a9cd5ef38/logo/cookiecutter_medium.png
 
 We are proud to be an open source sponsor of `PyCon 2016`_.
 
