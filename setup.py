@@ -30,7 +30,7 @@ requirements = [
     'click>=5.0,<8; python_version < "3.6"',
     'click>=5.0; python_version >= "3.6"',
     'MarkupSafe<2; python_version < "3.6"',
-    'arrow<1; python_version < "3"',
+    'arrow<1; python_version < "3.6"',
     'whichcraft>=0.4.0',
     'poyo>=0.1.0',
     'jinja2-time>=0.1.0',
