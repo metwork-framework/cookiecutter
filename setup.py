@@ -23,7 +23,6 @@ with io.open('README.md', 'r', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 requirements = [
-    'future>=0.15.2',
     'binaryornot>=0.2.0',
     'jinja2>=2.7,<3; python_version < "3.6"',
     'jinja2>=2.7; python_version >= "3.6"',
@@ -35,6 +34,7 @@ requirements = [
     'poyo>=0.1.0',
     'jinja2-time>=0.1.0',
     'requests>=2.18.0',
+    'six>=1.10',
 ]
 
 if sys.argv[-1] == 'readme':
