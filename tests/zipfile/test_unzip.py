@@ -79,7 +79,8 @@ def test_unzip_protected_local_file_bad_environment_password(mocker, tmpdir):
 
 
 def test_unzip_protected_local_file_user_password_with_noinput(mocker, tmpdir):
-    """In `unzip()`, you can't unpack a password-protected repo in no_input mode
+    """In `unzip()`, you can't unpack a password-protected repo in 
+    no_input mode
     """
     mocker.patch(
         'cookiecutter.zipfile.prompt_and_delete',
@@ -234,8 +235,8 @@ def test_unzip_url(mocker, tmpdir):
 
 
 def test_unzip_url_existing_cache(mocker, tmpdir):
-    """In `unzip()`, a url will be downloaded and unzipped; an existing zip file
-    will be removed.
+    """In `unzip()`, a url will be downloaded and unzipped; an existing zip
+    file will be removed.
     """
     mock_prompt_and_delete = mocker.patch(
         'cookiecutter.zipfile.prompt_and_delete',
@@ -269,7 +270,7 @@ def test_unzip_url_existing_cache(mocker, tmpdir):
 
 
 def test_unzip_url_existing_cache_no_input(mocker, tmpdir):
-    """In `unzip()`, if no_input is provided, the existing file will be removed.
+    """In `unzip()`, if no_input is provided, the existing file will be removed
     """
     request = mocker.MagicMock()
     request.iter_content.return_value = mock_download()
