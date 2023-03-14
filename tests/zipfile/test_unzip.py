@@ -79,7 +79,7 @@ def test_unzip_protected_local_file_bad_environment_password(mocker, tmpdir):
 
 
 def test_unzip_protected_local_file_user_password_with_noinput(mocker, tmpdir):
-    """In `unzip()`, you can't unpack a password-protected repo in 
+    """In `unzip()`, you can't unpack a password-protected repo in
     no_input mode
     """
     mocker.patch(
