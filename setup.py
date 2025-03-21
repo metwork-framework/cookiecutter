@@ -24,17 +24,14 @@ with io.open('README.md', 'r', encoding='utf-8') as readme_file:
 
 requirements = [
     'binaryornot>=0.2.0',
-    'jinja2>=2.7,<3; python_version < "3.6"',
-    'jinja2>=2.7; python_version >= "3.6"',
-    'click>=5.0,<8; python_version < "3.6"',
-    'click>=5.0; python_version >= "3.6"',
-    'MarkupSafe<2; python_version < "3.6"',
-    'arrow<1; python_version < "3.6"',
-    'whichcraft>=0.4.0',
+    'jinja2>=2.7',
+    'click>=5.0',
+    'MarkupSafe<3; python_version < "3.9"',
     'poyo>=0.1.0',
     'jinja2-time>=0.1.0',
     'requests>=2.18.0',
     'six>=1.10',
+    'setuptools; python_version > "3.11"',
 ]
 
 if sys.argv[-1] == 'readme':
