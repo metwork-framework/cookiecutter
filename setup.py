@@ -8,7 +8,7 @@ import sys
 from setuptools import setup
 
 with open('requirements.txt') as reqs:
-    install_requires = [
+    requirements = [
         line for line in reqs.read().split('\n')
         if (line and not line.startswith('--'))]
 
