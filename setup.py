@@ -7,7 +7,12 @@ import sys
 
 from setuptools import setup
 
-version = "1.6.0"
+with open('requirements.txt') as reqs:
+    install_requires = [
+        line for line in reqs.read().split('\n')
+        if (line and not line.startswith('--'))]
+
+version = "1.6.1"
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
@@ -21,18 +26,6 @@ if sys.argv[-1] == 'tag':
 
 with io.open('README.md', 'r', encoding='utf-8') as readme_file:
     readme = readme_file.read()
-
-requirements = [
-    'binaryornot>=0.2.0',
-    'jinja2>=2.7',
-    'click>=5.0',
-    'MarkupSafe<3; python_version < "3.9"',
-    'poyo>=0.1.0',
-    'jinja2-time>=0.1.0',
-    'requests>=2.18.0',
-    'six>=1.10',
-    'setuptools; python_version > "3.11"',
-]
 
 if sys.argv[-1] == 'readme':
     print(readme)
